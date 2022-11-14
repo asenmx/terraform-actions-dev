@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     strategy:
-      matrix: { env: [ "/", "testing" ] }
+      matrix: { env: [ ".", "testing" ] }
     environment: ${{ matrix.env }}
     defaults:
       run:
